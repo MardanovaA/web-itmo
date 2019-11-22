@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link id="css_file" rel="stylesheet" href="./style.css">
+    <script type="text/javascript">
+        function ChangeText(){
+            document.getElementById("p1").innerHTML="Новый текст!";
+            document.getElementById('button1').disabled = true;
+        }
+    </script>
+</head>
+<body>
+    <div class="mainContainer">
+        <p id="p1">Hello!</p>
+        <input name="button1" id="button1" type="button" value="Click me and change the text!" onclick="ChangeText()">
+        <a>First anchor text</a>
+        <a href="https:\\vk.com\">Second anchor</a>
+        <form name="form1">First form</form>
+        <form>Second form!!!</form>
+        <img id="helloPic" width="80px" src="http://pngimg.com/uploads/hello/hello_PNG4.png" alt="funny">
+    </div>
+    <div class="footer">
+        <p> this is a footer idk</p>
+    </div>
+    <script src='./script.js'></script>
+</body>
+</html>
