@@ -1,0 +1,26 @@
+.first_div{	
+    background-color:rgb(114, 250, 209);	
+    width:	230px;	
+}	
+h2{
+    color: red;
+}
+
+table{
+    color: White;
+    text-align: center; 
+}
+
+form{
+    color: #0f0ff0
+}
+
+a{
+    background: limegreen;
+    border: 5px double black;
+    cursor: pointer;
+
+}
+a:hover{
+    color: red;
+}
