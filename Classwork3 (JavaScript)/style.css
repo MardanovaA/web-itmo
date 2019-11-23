@@ -1,11 +1,23 @@
+* {
+    background-color: rgba(214, 240, 250, 0.342);
+}
+
 body, .button {
     font-family: "Segoe UI";
 }
 .mainContainer {
     min-height: 100px;
-    background: rgb(163, 185, 211);
 }
 .footer {
     min-height: 50px;
-    background: rgb(132, 204, 162);
+}
+
+img {
+    border: 2px solid seagreen;
+}
+
+table{
+    background-color: blue;
+    color: White;
+    border: 20px solid darkblue;
 }

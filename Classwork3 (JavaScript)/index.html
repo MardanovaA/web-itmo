@@ -11,21 +11,54 @@
             document.getElementById("p1").innerHTML="Новый текст!";
             document.getElementById('button1').disabled = true;
         }
+        function changeWidth(){
+            document.getElementById("helloPic").style.width="120px";
+            document.getElementById("helloPic").style.height="120px";
+            document.getElementById("helloPic").style.border="20px solid green";
+        }
     </script>
 </head>
 <body>
     <div class="mainContainer">
         <p id="p1">Hello!</p>
-        <input name="button1" id="button1" type="button" value="Click me and change the text!" onclick="ChangeText()">
+        <form id="form1" action="https:\\FSB.com" enctype="multipart/form-data" name="form1">
+            <input name="button1" id="button1" type="button" value="Click me and change the text!" onclick="ChangeText()">
+            <br>
+            <input name="name" value="Ivan">
+            <input name="surname" value="Ivanov">
+        </form>
         <a>First anchor text</a>
         <a href="https:\\vk.com\">Second anchor</a>
-        <form name="form1">First form</form>
+        
         <form>Second form!!!</form>
-        <img id="helloPic" width="80px" src="http://pngimg.com/uploads/hello/hello_PNG4.png" alt="funny">
+        <img id="helloPic" name="pic" width="80px" src="http://pngimg.com/uploads/hello/hello_PNG4.png" alt="funny">
+        <input type="button" onclick="changeWidth()" value="Click and change the width" name="button2">
     </div>
     <div class="footer">
         <p> this is a footer idk</p>
     </div>
     <script src='./script.js'></script>
+    <div>
+        <table id="table1" CELLPADDING="15" CELLSPACING="5">
+            <tr>
+                <td>1.1</td>
+                <td>1.2</td>
+                <td>1.3</td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>2.2</td>
+                <td>2.3</td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>3.2</td>
+                <td>3.3</td>
+            </tr>
+        </table>
+        <input type="button" onclick="ChangeTable()" value="Click-Clock">
+        <input type="button" onclick="DeleteRow('table1')" value="Delete row">
+        <input type="button" onclick="InsertRow1('table1')" value="Insert row">
+    </div>
 </body>
 </html>
