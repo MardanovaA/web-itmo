@@ -21,24 +21,19 @@ body {
   background-size: cover;
 
 }
-
+ 
 .header .container {
 	position: relative;
 	top: 200px;
 }
 
 .header h1 {
-	font-size: 80px;
+	font-size: 120px;
 	line-height: 100px; 
 	margin-top: 0;
 	margin-bottom: 80px;
   color: white;
-}
-
-@media (min-width:850px) {
-	.header h1 {
-		font-size: 120px;
-	}
+  text-transform: uppercase; /*Сделать все заглавными*/
 }
 
 .header p {
@@ -47,48 +42,49 @@ body {
 	margin-bottom: 40px;
 	margin-top: 0;
   color: white;
-}
+  text-transform: uppercase;
+} 
 .btn {
   background: black;
   color: white;
   text-decoration: none;
   padding: 10px 30px;
 }
-
 .btn:hover {
 	background: #117bff;
-	cursor: pointer; 
-	transition: background .5s;  
-}
+	cursor: pointer;  
+} 
 
 .nav {
   background: black;
+  height: 80px;
   color: white;
+  width: auto;
 }
 .nav ul {
+  line-height: 80px;
 	list-style: none;
 	margin: 0 auto; 
-	padding: 30px 0;
-  
 }
 .nav li {
-    display: inline;
-  	padding-right: 25px;
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
 }
-
 .nav li:hover{
-    color: gray;
-    cursor: pointer;
-
+	background: #117bff;
+  cursor: pointer;
 }
+
 
 .main .container {
 	margin: 80px auto;
 }
 .main img {
   float: left;
-  width: 196px;
-  height: 128px;
   margin: 50px 80px 50px 0;
 }
 
@@ -96,10 +92,9 @@ body {
 .jumbotron {
 	height: 600px; 
 	text-align: right;
-
-    color: white;
-    background: url(images/jumbotron_bg.jpg) no-repeat center center; 
-    background-size: cover;
+  color: white;
+  background: url(images/jumbotron_bg.jpg) no-repeat center center; 
+  background-size: cover;
 }
 .jumbotron .btn {
 	margin: 10px 0 0;
@@ -120,19 +115,4 @@ body {
 .footer p {
     line-height: 80px;
     margin: 0;
-}
-
-@media (max-width: 500px) {
-  .header h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
-  .main, .jumbotron {
-    padding: 0 30px;
-  }
-
-  .main img {
-    width: 100%;
-  }
 }

@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	height: 100%;
+}
+.all {
+	min-height: calc(100vh - 90px);
+}
+
+/*Пользовательские стили*/
+h2 {
+	margin: 40px auto;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.block1 h2, .block2 h2{
+	margin: 40px 0 0 0px;
+	text-align: center;
+}
+header, .content, footer {
+	display: flex;
+	flex-flow: column;
+}
+header {
+	background-color: yellow;
+	height: 100px;
+}
+
+.content {
+	/* flex: 1 0 auto; */
+	background-color: orange;
+	width: 1000px;
+	margin: 0 auto;
+	height: 800px;
+	background-image: url(https://vk.com/sticker/1-11642-128);
+	background-repeat: repeat;
+}
+
+.block2 {
+    display: block;
+    background-color: greenyellow;
+    width: 40%;
+    margin: -50px 0 0 500px;
+}
+
+.block1 {
+    display: block;
+    background-color: red;
+    width: 40%;
+    margin: -60px 150px;
+}
+footer {
+	background-color: red;
+	height: 100px;
+	/* flex: 0 0 auto; */
+}
+
+a{
+	color: rgb(104, 0, 0);
+}
+.menu {
+	border: 1px;
+	font: 25px sans-serif;
+}
+ul {
+	list-style-position: inside;
+}
+
+.imges{
+	/* opacity: 50%; */
+	align-self: center;
+	margin: 50px 0 100px 0 ;
+}

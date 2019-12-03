@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(198, 229, 250);
+}
+
 body, .button {
     font-family: "Segoe UI";
 }
