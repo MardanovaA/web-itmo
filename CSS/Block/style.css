@@ -62,7 +62,6 @@ header {
 footer {
 	background-color: red;
 	height: 100px;
-	/* flex: 0 0 auto; */
 }
 
 a{
