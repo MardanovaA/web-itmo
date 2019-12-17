@@ -20,21 +20,21 @@ $(document).ready(function(){
   });
 
   // Эффекты
-  $('#13').click(function(){
-    $('#12').fadeOut('slow', function() {});
+  $('#b1').click(function(){
+    $('#t1').fadeOut('slow', function() {});
   });
-  $('#23').click(function(){
-    $('#22').fadeTo("fast", "0.5", function() {});
+  $('#b2').click(function(){
+    $('#t2').fadeTo("fast", "0.5", function() {});
   });
-  $('#33').click(function(){
-    $('#32').slideToggle("slow", function() {});
+  $('#b3').click(function(){
+    $('#t3').slideToggle("slow", function() {});
   });
-  $("#42").hide();
-  $('#43').click(function(){
-    $('#42').show();
+  $("#t4").hide();
+  $('#b4').click(function(){
+    $('#t4').show();
   });
-  $('#53').click(function(){
-    $('#52').animate({ fontSize: '20px' })
+  $('#b5').click(function(){
+    $('#t5').animate({ fontSize: '20px' })
   });
 
   //Ajax
@@ -56,7 +56,7 @@ $(document).ready(function(){
       let obj = document.createElement("p");
       obj.setAttribute("id", "ajaxObj");
       document.getElementsByTagName('body')[0].appendChild(obj);
-      $("p#ajaxObj").load("https://inxaoc.github.io/example/ajax.json", "abc=abc", parser);
+      $("p#ajaxObj").load("https://inxaoc.github.io/example/ajax.json", "smth", parser);
   });
 
   function parser() {
