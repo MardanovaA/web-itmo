@@ -1,19 +1,19 @@
 $(document).ready(function(){
-  $("p").css("fontSize","30px");
-  $("p").css("color","orange");
-  $("a").prepend("<div id='emoji'>↗</div>"); //добавление стрелочки перед каждой ссылкой
-  $("a").attr("target","_blank"); //добавляет атрибут таргет, чтобы ссылка открывалась в новой вкладке
-  //$("a").attr("href","$('a').replace('http',https')");//изменяет все http na https
-  function del(){
-  for(let i = 0; i<document.links.length; i++)
-  {
-  document.getElementById("emoji").remove();
-  $("a").removeAttr("target");
-  };
-  }
-  $(".par").append("<input type='reset' id='button'>");
-  $("#button").click(function() {
-  $("#emoji").remove();
+  $(".Social, .text").css("color", "orange");
+  $(".Search, .number").css("fontSize", "30px");
+  $("input").attr("disabled", true);
+  $("[href]").prepend("↗"); //добавление стрелочки перед каждой ссылкой
+  $("[href]").attr("target", "_blank");
+  $("[href]").each(function() {
+      $(this).attr("href", $(this).attr("href").replace("http://", "https://"));
+  });
+
+  $(".DeleteButton").click(function() {
+    $("[href]").each(function() {
+        $(this).contents().eq(0).remove();
+    });
+    $("[href]").removeAttr("target");
+    $(this).attr('disabled', true);
   });
 
   $("a").each(function() {
@@ -33,5 +33,14 @@ $(document).ready(function(){
 
   $('#33').click(function(){
     $('#32').slideToggle("slow", function() {});
+  });
+
+  $("#42").hide();
+  $('#43').click(function(){
+    $('#42').show();
+  });
+
+  $('#53').click(function(){
+    $('#52').animate({ fontSize: '20px' })
   });
 });
