@@ -24,14 +24,14 @@ $(document).ready(function(){
     $('#t1').fadeOut('slow', function() {});
   });
   
-  $('#FIO').click(function1('#Cats'));
-   function functcion1(id) {
-     $(id).fadeToggle('slow', function1(id));
-   };
+  // $('#FIO').click(function1('#Cats'));
+  //  function functcion1(id) {
+  //    $(id).fadeToggle('slow', function1(id));
+  //  };
 
-  // $('#FIO').click(function(){
-  //   $('#Cats').fadeToggle('slow', function(){});
-  // });
+  $('#FIO').click(function(){
+    $('#Cats').fadeToggle('slow', function(){});
+  });
 
 
   $('#b2').click(function(){
