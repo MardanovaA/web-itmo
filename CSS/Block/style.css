@@ -37,7 +37,6 @@ header {
 }
 
 .content {
-	/* flex: 1 0 auto; */
 	background-color: orange;
 	width: 1000px;
 	margin: 0 auto;
