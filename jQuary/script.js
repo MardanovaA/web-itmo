@@ -4,9 +4,6 @@ $(document).ready(function(){
   $("input").attr("disabled", true);
   $("[href]").prepend("↗"); //добавление стрелочки перед каждой ссылкой
   $("[href]").attr("target", "_blank");
-  $("[href]").each(function() {
-      $(this).attr("href", $(this).attr("href").replace("http://", "https://"));
-  });
 
   $(".DeleteButton").click(function() {
     $("[href]").each(function() {
